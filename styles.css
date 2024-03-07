@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff3366, #ff6699);
+}
+
+.hidden {
+    display: none;
+}
+
+#fireworks {
+    /* Styles for fireworks effect  */
+}
+
+#btnContainer {
+    position: fixed;
+    top: 50%;
+    left: 33%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+}
+
+#typingEffect {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#typedText {
+    display: inline;
+    color: white;
+    font-size: 30px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 1;
+    /* Ensure buttons are above the background */
+}
+
+#btnNo {
+    animation: bounce 2s infinite;
+}
+
+#btnNo {
+    position: absolute;
+    left: 100%;
+}
+
+#textCamon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
