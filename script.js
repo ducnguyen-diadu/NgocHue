@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
             textCamon.innerText = "Hình như hết rồi, à chưa đợi tí nữa chưa xong";
             // Chuyển hướng sau 5 giây
             setTimeout(function() {
-                window.location.href = "/tim/index.html"; // Thay thế bằng URL bạn muốn chuyển hướng
+                window.location.href = "/NgocHue/tim/index.html"; // Thay thế bằng URL bạn muốn chuyển hướng
             }, 5000);
         }, 10000);
     });
